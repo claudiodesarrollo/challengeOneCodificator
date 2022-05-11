@@ -1,0 +1,26 @@
+body{
+    background-color: #F3F5FC;
+    position: relative;
+    width: 1440;
+    height: 1024;
+    
+}
+
+footer{
+    position: fixed;
+    bottom:0px;
+    height: 40px; 
+    width: 100%;
+    text-align: center;
+}
+
+.logodiv{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#logo{
+    width: 120px;
+    height: 48px;
+}
