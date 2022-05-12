@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="esp">
+
 <head>
-     <meta charset = "UTF-8">
-     <title> Cursos de Alura - Encriptador</title>
-     <link rel="stylesheet" href="./style.css">
-     <script src="./script.js"></script>
+    <meta charset="UTF-8">
+    <title> Cursos de Alura - Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="logodiv">
-            <img src="image/Logo.png"  alt="Alura" srcset="image/Logo@2x.png" id="logo">
-        </div>
+            <img src="image/Logo.png" alt="Alura" srcset="image/Logo@2x.png" id="logo">
+
     </header>
-    <nav></nav>
     <main>
-        <section >
-            
+        <section>
+            <textarea name="entrada" id="area-entrada">Ingrese el texto aqui</textarea>
+            <img src="image/bi_exclamation-circle-fill.png" alt="!" id="exp">
+
+            <label class="exclamacion">letras minúsculas y sin acentos</label>
+            <div class="frame3">
+                <button name="encriptar" > Encriptar</button>
+                <button name="desencriptar">Desencriptar </button>
+                <input type="button" id="btn-encriptar" value="Encriptar">
+                <input type="button" id="btn-desencriptar" value="Desencriptar">
+            </div>
         </section>
     </main>
-    <aside >
-
+    <aside>
+        <textarea name="resultado"></textarea>
     </aside>
 
     <footer>
-        Alura Challenge  - Quipildor Claudio 2022
+        Alura Challenge - Quipildor Claudio 2022
     </footer>
 </body>
+
 </html>
