@@ -20,14 +20,10 @@
     <main>
         <section class="principal">
             <textarea name="entrada" class="area-entrada" placeholder="Ingrese el texto aqui" required></textarea>
-
-
             <div class="frame1">
                 <img src="image/bi_exclamation-circle-fill.png" alt="!" id="exp">
-
                 <label class="exclamacion">Solo letras minúsculas y sin acentos</label>
             </div>
-
             <div class="frame3">
                 <button name="encriptar" class="btn-encriptar" onclick="btnEncrypt()"> Encriptar</button>
                 <button name="desencriptar" class="btn-desencriptar" onclick="btnUnlock()">Desencriptar </button>
@@ -35,10 +31,15 @@
         </section>
         <section class="aside">
             <textarea name="resultado" class="text-result"></textarea>
+            <div class="rectangle1"></div>
+            <img src="image/Muñeco.png" alt="" class="muneco">
+            <div class="frame5">
+                <label class="text1">Ningún mensaje fue encontrado</label>
+                <label class="text2">Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+            <button class="copiar hidden" onclick="copiarTexto()"> Copiar </button>
         </section>
     </main>
-
-
     <footer>
         Alura Challenge - Quipildor Claudio 2022
     </footer>
