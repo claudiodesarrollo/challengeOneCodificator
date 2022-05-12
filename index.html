@@ -7,35 +7,42 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-            <img src="image/Logo.png" alt="Alura" srcset="image/Logo@2x.png" id="logo">
+        <img src="image/Logo.png" alt="Alura" srcset="image/Logo@2x.png" id="logo">
 
     </header>
     <main>
-        <section>
+        <section class="principal">
             <textarea name="entrada" class="area-entrada" placeholder="Ingrese el texto aqui" required></textarea>
-            <img src="image/bi_exclamation-circle-fill.png" alt="!" id="exp">
 
-            <label class="exclamacion">letras minúsculas y sin acentos</label>
+
+            <div class="frame1">
+                <img src="image/bi_exclamation-circle-fill.png" alt="!" id="exp">
+
+                <label class="exclamacion">Solo letras minúsculas y sin acentos</label>
+            </div>
+
             <div class="frame3">
-                <button name="encriptar" id="btn-encriptar" onclick="btnEncrypt()"> Encriptar</button>
-                <button name="desencriptar" id="btn-desencriptar" onclick="btnUnlock()">Desencriptar </button>
-
+                <button name="encriptar" class="btn-encriptar" onclick="btnEncrypt()"> Encriptar</button>
+                <button name="desencriptar" class="btn-desencriptar" onclick="btnUnlock()">Desencriptar </button>
             </div>
         </section>
+        <section class="aside">
+            <textarea name="resultado" class="text-result"></textarea>
+        </section>
     </main>
-    <aside>
-        <textarea name="resultado" class="text-result"></textarea>
-    </aside>
+
 
     <footer>
         Alura Challenge - Quipildor Claudio 2022
     </footer>
 </body>
 <script src="./script.js"></script>
+
 </html>
